@@ -8,7 +8,7 @@
 
     public static int ConvertStringToInt(string input) {
         if(int.TryParse(input, out int number)) {
-            if(number % 2 == 0) {
+            if(number % 2 == 0 && number >= 0) {
             return number;
             }
             else if(number <= 0) {
